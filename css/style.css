@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@200&family=Poppins:ital,wght@0,200;1,200&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,400;0,500;1,300;1,400&family=Sanchez:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+:root{
+   --text-color:white;
+   --bg-color:rgb(55, 81, 126);
+   --secodary-color:gray;
+   --box-shadow:0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
+   --black-color:#000;
+   --color:#37517e;
+}
+h1{
+    color: var(--black-color);
+    font-size: 3rem;
+    font-weight: 800;
+}
+h2{
+    color: var(--color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+h3{
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+h4{
+    color: var(--black-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1;
+}
+h5{
+    color: var(--black-color);
+    font-size: 0.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: var(--black-color);
+}
+.main-btn{
+    border-radius: 20px;
+    color: var(--text-color);
+}
+/* header section starts */
+header{
+    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+header h1{
+    color: white;
+}
+header .navbar-brand{
+    color: var(--text-color);
+    font-size: 30px;
+
+}
+header #navbarNav a{
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+header #navbarNav .dropdown-item, header #navbarNav .deep-dropdown {
+    color: var(--text-black);
+}
+/* header section ends */
+/* home section starts */
+.home{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+}
+.home h1{
+    color: white;
+}
+.home .main-btn{
+    padding:  10px 24px 11px;
+}
+.home .fa-regular{
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+.home .fa-regular:hover{
+    color: rgb(116, 116, 240);
+}
+.home span{
+    color: var(--text-color);
+}
+/* home section ends */
+/* banner section starts */
+#banner{
+    width: 100%;
+    background:#ddd;
+}
+#banner img{
+    width: 80px;
+}
+/* banner section ends */
+/* about section starts */
+#about{
+    background: #eee;
+    height: auto;
+    padding: 30px;
+}
+/* about section ends */
+/* banner section starts */
+#banner2{
+    background: #ddd;
+}
+
+/* banner section ends */
+/* banner3 section starts */
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* banner3 section ends */
+/* services section starts */
+#services{
+    background: #ddd;
+}
+.services .card i{
+    font-size: 1.7rem;
+}
+.services .card{
+    margin-top: 20px;
+    transition:.4s;
+}
+.services .card:hover{
+    transform: translateY(-5%);
+}
+/* services section ends */
+/* banner4 section starts */
+#banner4{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(4,9,20,0.8),rgba(4,9,30,0.8)),url(../images/cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4.5rem 0;
+}
+.banner4{
+    color: #eee;
+}
+/* banner4 section ends */
+/* portfolio section starts */
+.container1{
+    columns: 3;
+}
+.container1 img{
+    width: 100%;
+    margin: 10px;
+}
+/* portfolio section ends */
+/* team section starts */
+#team{
+    background: #eee;
+}
+#team .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+#team .icon a{
+    margin-left: 10px;
+}
+/* team section ends */
+/* pricing section starts */
+#pricing{
+    background: #ddd;
+}
+.pricing h4{
+    font-size: 20px;
+    color: #37517e;
+}
+.pricing span{
+    font-size: 48px;
+    color: #37517e;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.pricing p{
+    color: #47b2e4;
+    font-size: 18px;
+    display: block;
+}
+.pricing .main-btn{
+    color: #000;
+}
+.pricing .main-btn:hover{
+    color: white;
+}
+.second{
+    border-top: 3px solid #47b2e4;
+}
+/* pricing section ends */
+/* contact section starts */
+#contact{
+    background: #ddd;
+}
+#contact .card{
+    border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+}
+.contact i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #47b2e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contact i:hover{
+    color: white;
+}
+.con{
+    padding-left: 20px;
+}
+.con h3{
+    font-size: 20px;
+    font-weight: 1000;
+}
+#con{
+    margin: 10px 0;
+}
+#subject{
+    margin: 30px 0;
+}
+/* contact section ends */
+/* banner6 section starts */
+#banner6{
+    background: #eee;
+}
+#banner6 form input[type=email]{
+    border: none;
+    width: 400px;
+    padding: 9px 30px;
+    border-radius: 20px;
+}
+/* banner6 section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media(max-width:991px){
+    .home{
+        padding: 40px;
+        height: auto;
+        text-align: center;
+    }
+    .home h1{
+        font-size: 50px;
+    }
+    .home p{
+        font-size: 19px;
+    }
+    .home br{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .home{
+        padding: 40px;
+        height: auto;
+        text-align: center;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    .home p{
+        font-size: 20px;
+    }
+    .home br{
+        display: none;
+    }
+    #banner4{
+        text-align: center;
+    }
+    #banner4 button{
+        margin-left: 150px;
+    }
+    .container1{
+        columns: 1;
+        overflow-x: hidden;
+    }
+    .container1 img{
+        width: 100%;
+    }
+    #banner6 form input[type=submit]{
+        margin-top: 20px;
+    }
+}
+
